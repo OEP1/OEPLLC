@@ -3,89 +3,188 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact — [Practice Name]</title>
-<meta name="description" content="Start with a short conversation. No pitch, no obligation.">
+<title>Contact | Opulent Echo Partners — Operations &amp; Healthcare Consulting</title>
+<meta name="description" content="Request a complimentary consultation with Opulent Echo Partners. Tampa, Florida.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#main">Skip to main content</a>
 
-<header class="masthead">
-  <div class="wrap masthead__inner">
-    <a class="wordmark" href="index.html">[Practice Name]<span>Consulting</span></a>
-    <nav class="nav" aria-label="Main">
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark">OEP</span>
+      <span class="brand__text">
+        <span class="brand__name">Opulent Echo Partners</span>
+        <span class="brand__sub">Operations &amp; Healthcare Consulting</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="about.html">About</a>
       <a href="contact.html" aria-current="page">Contact</a>
     </nav>
+    <div class="header-cta">
+      <a class="btn btn--primary btn--sm" href="#request">Request a consultation</a>
+    </div>
   </div>
 </header>
 
 <main id="main">
 
-  <section class="wrap hero">
-    <p class="hero__note">Contact</p>
-    <h1>Tell me what's going on</h1>
-    <p class="lede">A few sentences is enough to start. I read everything myself and reply within two business days.</p>
-  </section>
-
-  <section class="wrap doc reveal">
-    <div class="rail">
-      Direct
-      <em>Email reaches me fastest.</em>
-    </div>
-    <div>
-      <p class="contact-line"><a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
-      <p class="contact-line"><a href="tel:+15551234567">(555) 123-4567</a></p>
-
-      <dl class="detail-list">
-        <dt>Based in</dt>
-        <dd>[Your City], [State] — working with clients anywhere</dd>
-
-        <dt>Response time</dt>
-        <dd>Within two business days</dd>
-
-        <dt>First call</dt>
-        <dd>45 minutes, free, no obligation</dd>
-      </dl>
-
-      <p style="margin-top:2.4rem">
-        <a class="btn" href="mailto:hello@yourdomain.com?subject=Consulting%20inquiry">Send an email</a>
-      </p>
+  <section class="hero hero--compact">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Contact</p>
+      <p class="eyebrow">Contact</p>
+      <h1>Request a consultation</h1>
+      <p>A complimentary 45-minute conversation about your situation. Every inquiry is read personally and answered within two business days.</p>
     </div>
   </section>
 
-  <div class="band">
-    <section class="wrap doc reveal">
-      <div class="rail">Helpful to include</div>
-      <div>
-        <h2>What to put in your first message</h2>
-        <p>None of this is required, but it makes the first call much more useful:</p>
-        <div class="entry">
-          <ul>
-            <li>What the organization does, in a sentence</li>
-            <li>Roughly how many people are affected by the problem</li>
-            <li>What you've already tried</li>
-            <li>What "solved" would look like to you</li>
-          </ul>
+  <section class="section" id="request">
+    <div class="wrap">
+      <div class="contact-layout">
+
+        <div>
+          <h2>Send an inquiry</h2>
+          <p style="color:var(--slate)">Complete the form below and your email application will open with the details prepared. Fields marked with an asterisk are required.</p>
+
+          <div class="field">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" autocomplete="name">
+          </div>
+
+          <div class="field">
+            <label for="org">Organization *</label>
+            <input type="text" id="org" name="org" autocomplete="organization">
+          </div>
+
+          <div class="field">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+          </div>
+
+          <div class="field">
+            <label for="area">Area of interest</label>
+            <select id="area" name="area">
+              <option>Not sure yet</option>
+              <option>Data collection &amp; reporting</option>
+              <option>Supply chain management</option>
+              <option>Workforce training &amp; onboarding</option>
+              <option>Multiple areas</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">How can we help? *</label>
+            <textarea id="message" name="message" placeholder="A few sentences about the situation is enough to start."></textarea>
+          </div>
+
+          <button type="button" class="btn btn--primary" id="send">Prepare inquiry email</button>
+          <p class="form-note" id="formNote">Your message opens in your own email application, so nothing is transmitted through this website.</p>
         </div>
+
+        <div>
+          <div class="info-panel">
+            <h3 style="margin-bottom:1.3rem">Direct contact</h3>
+            <dl style="margin:0">
+              <div class="info-row">
+                <dt>Email</dt>
+                <dd><a href="mailto:info@opulentechopartners.com">info@opulentechopartners.com</a></dd>
+              </div>
+              <div class="info-row">
+                <dt>Location</dt>
+                <dd>Tampa, Florida<br><span style="color:var(--slate);font-size:.93rem">On site across the region, remote nationwide</span></dd>
+              </div>
+              <div class="info-row">
+                <dt>Response time</dt>
+                <dd>Within two business days</dd>
+              </div>
+              <div class="info-row">
+                <dt>Initial consultation</dt>
+                <dd>45 minutes, complimentary</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="info-panel" style="margin-top:1.5rem">
+            <h3 style="margin-bottom:.9rem">Helpful to include</h3>
+            <ul class="checklist" style="margin-top:0">
+              <li>What the organization does and approximate headcount</li>
+              <li>Which practice area is closest to the problem</li>
+              <li>What has already been tried, and where it stalled</li>
+              <li>What a resolved situation would look like in six months</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap cta-band__inner">
+      <div>
+        <h2>Prefer to write directly?</h2>
+        <p>Email works just as well as the form. If the situation is outside our scope, we will say so and point you toward someone better suited.</p>
+      </div>
+      <div class="cta-band__actions">
+        <a class="btn btn--ghost" href="mailto:info@opulentechopartners.com">info@opulentechopartners.com</a>
+      </div>
+    </div>
+  </section>
 
 </main>
 
-<footer class="foot">
-  <div class="wrap foot__inner">
-    <span>[Practice Name] · [Your City]</span>
-    <span><a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></span>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand__mark">OEP</span>
+          <span class="brand__text">
+            <span class="brand__name">Opulent Echo Partners</span>
+            <span class="brand__sub">Operations &amp; Healthcare</span>
+          </span>
+        </a>
+        <p style="margin-top:1.1rem">Independent consulting for healthcare and operations organizations. Based in Tampa, Florida; serving clients on site regionally and remotely nationwide.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#data">Data collection &amp; reporting</a></li>
+          <li><a href="services.html#supply">Supply chain management</a></li>
+          <li><a href="services.html#training">Workforce training</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@opulentechopartners.com">info@opulentechopartners.com</a></li>
+          <li>Tampa, Florida</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap legal" style="width:100%">
+      <span>&copy; 2026 Opulent Echo Partners LLC. All rights reserved.</span>
+      <span>Tampa, Florida</span>
+    </div>
   </div>
 </footer>
 
-<script src="reveal.js"></script>
+<script src="site.js"></script>
 </body>
 </html>

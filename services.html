@@ -3,126 +3,224 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Services — [Practice Name]</title>
-<meta name="description" content="Consulting services: assessment, strategy, and hands-on implementation support.">
+<title>Services | Opulent Echo Partners — Operations &amp; Healthcare Consulting</title>
+<meta name="description" content="Data collection systems, supply chain management, and workforce training programs for healthcare and operations organizations.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#main">Skip to main content</a>
 
-<header class="masthead">
-  <div class="wrap masthead__inner">
-    <a class="wordmark" href="index.html">[Practice Name]<span>Consulting</span></a>
-    <nav class="nav" aria-label="Main">
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark">OEP</span>
+      <span class="brand__text">
+        <span class="brand__name">Opulent Echo Partners</span>
+        <span class="brand__sub">Operations &amp; Healthcare Consulting</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
       <a href="index.html">Home</a>
       <a href="services.html" aria-current="page">Services</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <div class="header-cta">
+      <a class="btn btn--primary btn--sm" href="contact.html">Request a consultation</a>
+    </div>
   </div>
 </header>
 
 <main id="main">
 
-  <section class="wrap hero">
-    <p class="hero__note">Services</p>
-    <h1>Three ways to work together</h1>
-    <p class="lede">Most engagements fall into one of these. If yours doesn't, say so — the shape can be adjusted.</p>
-  </section>
-
-  <section class="wrap doc reveal">
-    <div class="rail">
-      Engagements
-      <em>Pricing is fixed per engagement and quoted after the first call.</em>
-    </div>
-    <div>
-
-      <div class="entry">
-        <p class="entry__tag">2–3 weeks · fixed fee</p>
-        <h3>Assessment</h3>
-        <p>A focused review of one area of the business. I interview the people doing the work, look at whatever data exists, and come back with a written picture of what's happening and what I'd change first.</p>
-        <ul>
-          <li>Interviews with your team and, where useful, your customers</li>
-          <li>Review of current process, tooling, and reporting</li>
-          <li>A written findings document with prioritized recommendations</li>
-          <li>A working session to walk through it with your leadership</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <p class="entry__tag">4–8 weeks · fixed fee</p>
-        <h3>Strategy and planning</h3>
-        <p>For when you know roughly what needs to change but not how to sequence it. We build the plan together, so the people who have to execute it actually believe in it.</p>
-        <ul>
-          <li>Goal-setting sessions with the leadership team</li>
-          <li>A prioritized roadmap with owners, dates, and dependencies</li>
-          <li>Clear definitions for how you'll know it's working</li>
-          <li>Help communicating the plan to the wider organization</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <p class="entry__tag">3–6 months · monthly retainer</p>
-        <h3>Implementation support</h3>
-        <p>Plans fail in the execution, not the planning. This is ongoing, hands-on involvement while the change is actually happening — for teams that don't have the internal bandwidth to drive it alone.</p>
-        <ul>
-          <li>Weekly working sessions with the team doing the work</li>
-          <li>Unblocking decisions before they stall for a month</li>
-          <li>Coaching for whoever will own this after I leave</li>
-          <li>Monthly progress reporting for your board or stakeholders</li>
-        </ul>
-      </div>
-
+  <section class="hero hero--compact">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Services</p>
+      <p class="eyebrow">Capabilities</p>
+      <h1>Consulting services for operations and healthcare teams</h1>
+      <p>Three practice areas, delivered as fixed-price engagements with defined deliverables and a documented handoff.</p>
     </div>
   </section>
 
-  <div class="band">
-    <section class="wrap doc reveal">
-      <div class="rail">
-        Common questions
-      </div>
-      <div>
-        <h2>Before you ask</h2>
+  <section class="section">
+    <div class="wrap">
 
-        <div class="entry">
+      <div class="service-block" id="data">
+        <div>
+          <p class="eyebrow">Practice area 01</p>
+          <h2>Data collection &amp; reporting</h2>
+          <p>Leadership asks a reasonable question — why supply spend jumped, how long intake actually takes, which shift generates the rework — and the honest answer is that nobody knows. Not because the team is careless, but because no one ever designed a way to capture it.</p>
+          <p>We determine what is genuinely worth tracking, then build collection into the existing workflow rather than bolting it on. If a nurse or a warehouse lead has to open a separate spreadsheet to record something, it will not survive the month.</p>
+          <ul class="checklist">
+            <li>Definition of the small set of measures that drive decisions</li>
+            <li>Collection designed to fit the workflow, not interrupt it</li>
+            <li>Extraction from existing EHR, ERP, or WMS systems where possible</li>
+            <li>One-page management reporting rather than an unused dashboard</li>
+            <li>Data audit method to verify the numbers stay trustworthy</li>
+          </ul>
+        </div>
+        <div class="service-block__panel">
+          <h4>Typical engagement</h4>
+          <p>A focused review of one department or process, producing a written measurement plan, the collection tools themselves, and a reporting format your managers will actually use.</p>
+          <h4 style="margin-top:1.4rem">Common triggers</h4>
+          <ul class="checklist">
+            <li>Budget variances nobody can explain</li>
+            <li>Conflicting numbers from different departments</li>
+            <li>Reporting that takes days to assemble by hand</li>
+            <li>A new system that nobody trusts yet</li>
+          </ul>
+          <p class="service-block__meta">Typical duration: 3–6 weeks · Fixed fee</p>
+        </div>
+      </div>
+
+      <div class="service-block" id="supply">
+        <div>
+          <p class="eyebrow">Practice area 02</p>
+          <h2>Supply chain management</h2>
+          <p>Stockouts and overstock are the same failure wearing different clothes. Both come from par levels set by memory, ordering driven by whoever noticed an empty shelf, and no visibility into what is sitting in a back room two floors away.</p>
+          <p>In clinical settings the stakes are sharper. An expired item is a compliance finding, an untraceable recall is a serious exposure, and some supplies have no substitute. We work through those specifics rather than applying a generic retail inventory model.</p>
+          <ul class="checklist">
+            <li>Par levels rebuilt from actual consumption data</li>
+            <li>Vendor and contract review, including unused GPO terms</li>
+            <li>Receiving and put-away processes that catch errors at the dock</li>
+            <li>Expiry rotation and recall traceability for clinical supply</li>
+            <li>A reorder method your staff can run independently</li>
+          </ul>
+        </div>
+        <div class="service-block__panel">
+          <h4>Typical engagement</h4>
+          <p>A full assessment of inventory, procurement, and distribution for one facility or site, followed by implementation of revised par levels, processes, and controls.</p>
+          <h4 style="margin-top:1.4rem">Common triggers</h4>
+          <ul class="checklist">
+            <li>Recurring stockouts of critical items</li>
+            <li>Expired product write-offs</li>
+            <li>Supply spend rising faster than volume</li>
+            <li>A survey or audit finding on materials handling</li>
+          </ul>
+          <p class="service-block__meta">Typical duration: 6–12 weeks · Fixed fee</p>
+        </div>
+      </div>
+
+      <div class="service-block" id="training">
+        <div>
+          <p class="eyebrow">Practice area 03</p>
+          <h2>Workforce training &amp; onboarding</h2>
+          <p>In most operations and healthcare environments, training is an oral tradition. A new hire shadows whoever is available, absorbs that person's particular habits, and learns the rest by making mistakes. It works, slowly, and it quietly penalizes your best people by adding a second job to their day.</p>
+          <p>We convert what experienced staff already know into material that teaches without them, then train those staff to run the program so it outlives the engagement.</p>
+          <ul class="checklist">
+            <li>Written procedures for the tasks that actually cause errors</li>
+            <li>A structured ramp with checkpoints at week one, 30 days, and 90 days</li>
+            <li>Competency verification that measures skill rather than attendance</li>
+            <li>Preceptor training so the load is shared and consistent</li>
+            <li>Documentation that stands up to survey and audit requirements</li>
+          </ul>
+        </div>
+        <div class="service-block__panel">
+          <h4>Typical engagement</h4>
+          <p>Design and pilot of a complete onboarding program for one role or department, including all written materials, competency tools, and preceptor training.</p>
+          <h4 style="margin-top:1.4rem">Common triggers</h4>
+          <ul class="checklist">
+            <li>Turnover concentrated in the first 90 days</li>
+            <li>Errors traced to inconsistent training</li>
+            <li>Senior staff overloaded with training duties</li>
+            <li>Rapid hiring ahead of an expansion</li>
+          </ul>
+          <p class="service-block__meta">Typical duration: 8–16 weeks · Fixed fee</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section--grey">
+    <div class="wrap wrap--narrow" style="margin-inline:0">
+      <div class="section__head">
+        <p class="eyebrow eyebrow--dark">Engagement details</p>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="grid grid--2">
+        <article class="card">
           <h3>How is pricing structured?</h3>
-          <p>Fixed fee per engagement, quoted in writing after our first conversation. You'll know the total before anything starts. Retainers are billed monthly with 30 days' notice to end.</p>
-        </div>
-
-        <div class="entry">
-          <h3>Do you work remotely?</h3>
-          <p>Yes, and most engagements run that way. On-site time can be built in where it genuinely helps — kickoffs and working sessions usually benefit from being in the same room.</p>
-        </div>
-
-        <div class="entry">
+          <p>Fixed fee per engagement, quoted in writing after the initial consultation. You know the total before work begins. Extended implementation support is billed monthly with 30 days' notice to conclude.</p>
+        </article>
+        <article class="card">
+          <h3>Do you work on site?</h3>
+          <p>Yes, and for this work it is usually necessary. Par levels cannot be rebuilt and training cannot be written without observing the work directly. Analysis and documentation happen remotely.</p>
+        </article>
+        <article class="card">
           <h3>How small is too small?</h3>
-          <p>Not very. I've worked with teams of six and teams of six hundred. What matters more is whether someone on your side has the authority to make decisions.</p>
-        </div>
+          <p>Not very. A single surgical center, one distribution site, or a single department inside a larger system are all workable. What matters is whether someone has authority to change how the work is done.</p>
+        </article>
+        <article class="card">
+          <h3>How is protected health information handled?</h3>
+          <p>Engagements are structured to avoid PHI wherever possible, since supply and operational data rarely requires it. Where access is unavoidable, we work under your business associate agreement and access policies.</p>
+        </article>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <section class="wrap doc reveal">
-    <div class="rail">Next step</div>
-    <div>
-      <h2>Not sure which one fits?</h2>
-      <p>That's normal, and it's what the first call is for.</p>
-      <p style="margin-top:1.6rem"><a class="btn" href="contact.html">Book a conversation</a></p>
+  <section class="cta-band">
+    <div class="wrap cta-band__inner">
+      <div>
+        <h2>Not sure which practice area fits?</h2>
+        <p>That is what the first conversation is for. Describe the situation and we will tell you honestly whether we can help.</p>
+      </div>
+      <div class="cta-band__actions">
+        <a class="btn btn--primary" href="contact.html">Request a consultation</a>
+      </div>
     </div>
   </section>
 
 </main>
 
-<footer class="foot">
-  <div class="wrap foot__inner">
-    <span>[Practice Name] · [Your City]</span>
-    <span><a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></span>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand__mark">OEP</span>
+          <span class="brand__text">
+            <span class="brand__name">Opulent Echo Partners</span>
+            <span class="brand__sub">Operations &amp; Healthcare</span>
+          </span>
+        </a>
+        <p style="margin-top:1.1rem">Independent consulting for healthcare and operations organizations. Based in Tampa, Florida; serving clients on site regionally and remotely nationwide.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#data">Data collection &amp; reporting</a></li>
+          <li><a href="services.html#supply">Supply chain management</a></li>
+          <li><a href="services.html#training">Workforce training</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@opulentechopartners.com">info@opulentechopartners.com</a></li>
+          <li>Tampa, Florida</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap legal" style="width:100%">
+      <span>&copy; 2026 Opulent Echo Partners LLC. All rights reserved.</span>
+      <span>Tampa, Florida</span>
+    </div>
   </div>
 </footer>
 
-<script src="reveal.js"></script>
+<script src="site.js"></script>
 </body>
 </html>
