@@ -9,7 +9,8 @@ on the free tier.
 |---|---|
 | `index.html` | Home |
 | `services.html` | Three practice areas + FAQ |
-| `about.html` | Firm background and principal bio |
+| `regulatory.html` | FDA, ISO 13485, CLIA, LDT, GMP, PHI |
+| `about.html` | Firm background and approach |
 | `contact.html` | Inquiry form and direct contact details |
 | `style.css` | All styling — palette and fonts at the top |
 | `site.js` | Mobile menu, scroll reveal, contact form handler |
@@ -98,5 +99,6 @@ Menu items use industry terminology rather than generic labels:
 |---|---|
 | `index.html` | Overview |
 | `services.html` | Capabilities |
+| `regulatory.html` | Regulatory |
 | `about.html` | Our Firm |
 | `contact.html` | Contact Us |

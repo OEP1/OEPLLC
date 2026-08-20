@@ -1,8 +1,21 @@
 {
   "routes": [
-    { "route": "/services", "rewrite": "/services.html" },
-    { "route": "/about", "rewrite": "/about.html" },
-    { "route": "/contact", "rewrite": "/contact.html" }
+    {
+      "route": "/services",
+      "rewrite": "/services.html"
+    },
+    {
+      "route": "/about",
+      "rewrite": "/about.html"
+    },
+    {
+      "route": "/contact",
+      "rewrite": "/contact.html"
+    },
+    {
+      "route": "/regulatory",
+      "rewrite": "/regulatory.html"
+    }
   ],
   "responseOverrides": {
     "404": {
