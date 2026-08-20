@@ -22,7 +22,7 @@ Delete `reveal.js` from the repository if it is still there.
 
 - `Wing Cheung` on `about.html`, if you present the business differently
 
-The contact email `info@opulentechopartners.com` is already set throughout.
+The contact email `sales@opulentechopartners.com` is already set throughout.
 Create that mailbox in the Microsoft 365 admin center once the domain is verified.
 
 Then write the three bracketed paragraphs in `about.html`. That page carries the

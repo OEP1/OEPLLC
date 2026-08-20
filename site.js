@@ -44,7 +44,7 @@
   var btn = document.getElementById("send");
   if (!btn) return;
 
-  var RECIPIENT = "info@opulentechopartners.com"; // <-- change to your real address
+  var RECIPIENT = "sales@opulentechopartners.com"; // <-- change to your real address
 
   btn.addEventListener("click", function () {
     var get = function (id) {
@@ -56,6 +56,10 @@
     var org = get("org");
     var email = get("email");
     var area = get("area");
+    if (area === "Other") {
+      var other = get("areaOther");
+      area = other ? "Other — " + other : "Other (unspecified)";
+    }
     var message = get("message");
     var note = document.getElementById("formNote");
 
@@ -80,4 +84,20 @@
       "?subject=" + encodeURIComponent("Consultation request — " + org) +
       "&body=" + encodeURIComponent(body);
   });
+})();
+
+// Show the free-text field when "Other" is selected in Area of interest.
+(function () {
+  var sel = document.getElementById("area");
+  var wrap = document.getElementById("otherWrap");
+  if (!sel || !wrap) return;
+
+  var sync = function () {
+    var isOther = sel.value === "Other";
+    wrap.hidden = !isOther;
+    if (isOther) document.getElementById("areaOther").focus();
+  };
+
+  sel.addEventListener("change", sync);
+  sync();
 })();
