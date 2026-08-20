@@ -42,21 +42,52 @@ whole `<div class="bio__portrait">…</div>` with:
 Upload `portrait.jpg` to the repository root alongside the HTML files. A
 vertical 3:4 image around 900px tall works well.
 
-## Contact form
+## Contact form — REQUIRED SETUP
 
-No telephone number appears anywhere on the site; email and the inquiry form
-are the only contact routes. The form opens the visitor's own email client with
-the fields filled in. It works everywhere and requires no backend, but some visitors have no mail
-client configured.
+The form posts to Formspree, which emails each submission to you. Static sites
+cannot send email themselves, so this step is needed before the form works.
 
-To use a real hosted form instead, create a free Formspree account and change
-the button handler in `site.js`, or wrap the fields in:
+Until then, the form falls back to opening the visitor's email client. Nothing
+is lost, but it is a worse experience.
 
-```html
-<form action="https://formspree.io/f/YOUR_ID" method="POST">
-```
+### Setup — about three minutes, free
 
-and change the button to `type="submit"`.
+1. Go to **formspree.io** and sign up using `sales@opulentechopartners.com`.
+2. Create a new form, named something like "Website inquiries."
+3. Copy the endpoint URL it gives you. It looks like
+   `https://formspree.io/f/abcdwxyz`.
+4. Open `site.js` and find, near the bottom:
+
+   ```js
+   var ENDPOINT = "";  // <-- paste here
+   ```
+
+5. Paste the URL between the quotes:
+
+   ```js
+   var ENDPOINT = "https://formspree.io/f/abcdwxyz";
+   ```
+
+6. Commit. Submissions now arrive in your inbox.
+7. Formspree emails you once to confirm the address — click that link or
+   nothing will arrive.
+
+Free tier covers 50 submissions per month. **web3forms.com** works with the
+same code if you ever need a higher limit.
+
+### What the form already does
+
+- Validates required fields and email format before sending
+- Hidden honeypot field that catches most spam bots
+- Disables the button while sending so nothing submits twice
+- Replaces the form with a thank-you message on success
+- Reveals a free-text box when "Other" is selected under Area of interest
+- Falls back to email and shows your address if sending fails
+
+### Testing
+
+After deploying, submit a test inquiry and check that it arrives. Look in spam
+the first time — form services often land there until marked safe.
 
 ## Deploy and update
 

@@ -51,9 +51,9 @@
     <div class="wrap">
       <div class="contact-layout">
 
-        <div>
+        <div id="inquiryForm">
           <h2>Send an inquiry</h2>
-          <p style="color:var(--slate)">Complete the form below and your email application will open with the details prepared. Fields marked with an asterisk are required.</p>
+          <p style="color:var(--slate);margin-bottom:1.6rem">Fields marked with an asterisk are required. We read every inquiry ourselves.</p>
 
           <div class="field">
             <label for="name">Name *</label>
@@ -75,8 +75,9 @@
             <select id="area" name="area">
               <option>Not sure yet</option>
               <option>Data collection &amp; reporting</option>
-              <option>Supply chain management</option>
-              <option>Workforce training &amp; onboarding</option>
+              <option>Supply chain &amp; SKU management</option>
+              <option>Workforce training</option>
+              <option>Market research &amp; intelligence</option>
               <option>Multiple areas</option>
               <option value="Other">Other</option>
             </select>
@@ -92,8 +93,13 @@
             <textarea id="message" name="message" placeholder="A few sentences about the situation is enough to start."></textarea>
           </div>
 
-          <button type="button" class="btn btn--primary" id="send">Prepare inquiry email</button>
-          <p class="form-note" id="formNote">Your message opens in your own email application, so nothing is transmitted through this website.</p>
+          <div style="position:absolute;left:-9999px" aria-hidden="true">
+            <label for="company_website">Leave this field empty</label>
+            <input type="text" id="company_website" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button type="button" class="btn btn--primary" id="send">Send inquiry</button>
+          <p class="form-note" id="formNote">Your message is sent directly to OEP. We do not share your details with anyone.</p>
         </div>
 
         <div>
