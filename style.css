@@ -432,3 +432,48 @@ p:last-child { margin-bottom: 0; }
   .site-footer__grid { grid-template-columns: 1fr; gap: 2rem; }
   .header-cta .btn { display: none; }
 }
+
+/* ================================================================
+   Mission statement band
+   ================================================================ */
+
+.mission {
+  background: var(--white);
+  padding-block: clamp(3.5rem, 7vw, 5.5rem);
+  border-bottom: 1px solid var(--border);
+}
+.mission__inner { max-width: 60rem; }
+.mission__label {
+  font-family: var(--head); font-size: .78rem; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--blue-400);
+  margin-bottom: 1.6rem;
+}
+.mission__statement {
+  font-family: var(--head);
+  font-size: clamp(1.55rem, 3.4vw, 2.6rem);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  color: var(--navy-900);
+  margin: 0 0 1.6rem;
+}
+.mission__statement em {
+  font-style: normal;
+  color: var(--blue-500);
+}
+.mission__support {
+  font-size: 1.08rem; color: var(--slate); max-width: 52rem;
+}
+
+/* Split section: two balanced columns */
+.split {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 3.2rem; align-items: center;
+}
+.split--reverse .split__media { order: -1; }
+
+@media (max-width: 62rem) {
+  .split { grid-template-columns: 1fr; gap: 2rem; }
+  .split--reverse .split__media { order: 0; }
+  .figure--tall { aspect-ratio: 16/10; }
+}

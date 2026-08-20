@@ -88,3 +88,15 @@ Open `style.css`. Everything derives from the `:root` block:
 --teal:     #0E8F86;   /* checkmarks, secondary accent */
 --grey-50:  #F4F7FA;   /* alternating section background */
 ```
+
+
+## Navigation labels
+
+Menu items use industry terminology rather than generic labels:
+
+| Page | Menu label |
+|---|---|
+| `index.html` | Overview |
+| `services.html` | Capabilities |
+| `about.html` | Our Firm |
+| `contact.html` | Contact Us |
