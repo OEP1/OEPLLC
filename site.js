@@ -47,7 +47,7 @@
 // ---------------------------------------------------------------
 
 (function () {
-  var ENDPOINT = "";  // <-- paste here, e.g. https://formspree.io/f/abcdwxyz
+  var ENDPOINT = "https://formspree.io/f/abcdwxyz";
   var RECIPIENT = "sales@opulentechopartners.com";
 
   var btn = document.getElementById("send");
